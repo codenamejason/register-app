@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        moveAround: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '25%': { transform: 'translate(100px, 50px)' },
+          '50%': { transform: 'translate(50px, 100px)' },
+          '75%': { transform: 'translate(-50px, 50px)' },
+        }
+      },
+      animation: {
+        moveAround: 'moveAround 8s ease-in-out infinite',
       },
     },
   },
