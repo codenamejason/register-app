@@ -11,9 +11,9 @@ const config: Config = {
       keyframes: {
         moveAround: {
           '0%, 100%': { transform: 'translate(0, 0)' },
-          '25%': { transform: 'translate(100px, 50px)' },
-          '50%': { transform: 'translate(50px, 100px)' },
-          '75%': { transform: 'translate(-50px, 50px)' },
+          '25%': { transform: 'translate(400px, 100px)' },
+          '50%': { transform: 'translate(200px, 200px)' },
+          '75%': { transform: 'translate(-400px, 100px)' },
         }
       },
       animation: {
